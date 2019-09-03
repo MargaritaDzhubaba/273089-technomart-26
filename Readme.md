@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Маргарита Джубаба](https://up.htmlacademy.ru/htmlcss/26/user/273089).
-* Наставник: `Неизвестно`.
+* Наставник: [Алёна Сиприкова](https://htmlacademy.ru/profile/asiprikova).
 
 ---
 
