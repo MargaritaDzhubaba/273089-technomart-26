@@ -10,24 +10,18 @@
   			<a href="index.html">
           <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип компании Техномарт">
         </a>
-  			<form action="http://echo.htmlacademy.ru" method="post">
+  			<form action="http://echo.htmlacademy.ru" method="get">
           <input type="search" name="search-main" placeholder="Поиск:">
           <button type="submit" aria-label="Кнопка поиска по сайту Техномарт">
-            <!-- Не уверена, так ли вставлять иконку <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
           </button>
         </form>
         <ul>
-  			 <li><a href="#">Закладки:0</a></li>
-  			 <li><a href="#">Корзина:10</a></li>
+  			 <li><a href="#">Закладки:<span>0</span></a></li>
+  			 <li><a href="#">Корзина:<span>10</span></a></li>
          <li><a href="#">Оформить заказ</a></li>
         </ul>
   		</section>
-      <section class="visually-hidden">
-        <button type="button" aria-label="Закрыть окно">x</button>
-        <h2>Товар добавлен в корзину!</h2>
-        <a href="">Оформить заказ</a>
-        <button type="button">Продолжить покупки</button>
-      </section>
   		<section>
   			<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
   			<p>
@@ -75,7 +69,7 @@
       <h1>Перфораторы</h1>
       <section>
         <h2>Фильтр товаров</h2>
-        <form action="http://echo.htmlacademy.ru" method="get">
+        <form action="http://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Цена:</legend>
             <div>
@@ -141,18 +135,18 @@
       <section>
         <h2>Сортировка</h2>
         <ul>
-          <li><button type="button">По цене</button></li>
-          <li><button type="button">По типу</button></li>
-          <li><button type="button">По функционалу</button></li>
+          <li><a href="" aria-label="сотрировка по цене">По цене</a></li>
+          <li><a href="" aria-label="сотрировка по типу товаров">По типу</a></li>
+          <li><a href="" aria-label="сотрировка по функционалу">По функционалу</a></li>
           <li>
-            <button type="button" aria-label="сотрировка от меньшего к большему">
+            <a href="" aria-label="сотрировка от меньшего к большему">
              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg> 
-            </button>
+            </a>
           </li>
           <li>
-            <button type="button" aria-label="сортировка от большего к меньшему">
+            <a href="" aria-label="сортировка от большего к меньшему">
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>  
-            </button>
+            </a>
           </li>
         </ul>
       </section>
@@ -332,5 +326,13 @@
         </p>
       </div>
     </footer>
+    <div class="visually-hidden"> <!-- попап "товар в корзине"" -->
+      <button type="button" aria-label="Закрыть окно">
+        <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
+      </button>
+      <h2>Товар добавлен в корзину!</h2>
+      <a href="">Оформить заказ</a>
+      <a href="catalog.html">Продолжить покупки</a>>
+    </div>
   </body>
 </html>
