@@ -1,0 +1,557 @@
+/*общие стили*/
+
+html { 
+	box-sizing: border-box; 
+}
+
+*, *::before, *::after { 
+	box-sizing: inherit; 
+}
+
+body {
+	min-width: 1920px;
+
+	margin: 0;
+	padding: 0;
+
+	font-family: "Cuprum","PT Sans", "Arial", sans-serif;
+	font-weight: 400;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.btn {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+
+	color: #ffffff;
+	background-color: #FF5357;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	-webkit-clip-path: inset(100%);
+
+	        clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/*стили для хедера*/
+
+.main-header {
+	font-family: "Cuprum", "Arial", sans-serif;
+
+	background-color: #F3F7F9;
+}
+
+.top-menu, .main-nav {
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: 400;
+
+	background-color: #30374a;
+}
+
+.top-menu a, .main-nav a {
+	color: #ffffff;
+}
+
+.logo-technomart {
+	background-color: #EE3643;
+}
+
+.form-search button {
+	background-color: #30374a;
+	border: none;
+}
+
+.form-search input {
+	background-color: #30374a;
+	border: none;
+}
+
+.top-menu .chechout{
+	background-color: #63A63E;
+}
+
+.main-nav {
+	line-height: 17px;
+}
+
+.main-info h1, .main-info .slogan {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-style: italic;
+	font-size: 16px;
+	line-height: 23px;
+
+	color: #EE3643;
+}
+
+.main-info p {
+	font-size: 14px;
+	line-height: 24px;
+
+	color: #32425C;
+}
+
+.main-info a {
+	font-size: 21px;
+	line-height: 21px;
+
+	color: #EE3643;
+}
+
+.check-in a {
+	font-size: 21px;
+	line-height: 21px;
+
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.user-nav a {
+	font-size: 16px;
+	line-height: 18px;
+	text-decoration: underline;
+
+	color: #32425c;
+}
+
+/*стили для основного контента на главной странице*/
+
+.promo {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+
+	color: #ffffff;
+}
+
+.promo .btn {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.promo .materials {
+	background-color: #FFBF47;
+}
+
+.promo .tools {
+	background-color: #3BBCE3;
+}
+
+.promo .technics {
+	background-color: #DC91D8;
+}
+
+.promo .sale {
+	background-color: #8ED78F;
+}
+
+.promo .delivery {
+	background-color: #FFC047;
+}
+
+.slider h3 {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	color: #ffffff;	
+}
+
+.slider p {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+
+	color: #ffffff;		
+}
+
+.hummer img{
+	background-color: #989694;
+}
+
+.drill img {
+	background-color: #635953;
+}
+
+.slider .btn {
+	background-color: #EE3643;
+}
+
+.main-content h2 {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+
+	color: #32425C;
+}
+
+.popular-goods-box {
+	background-color: #f8f5f0;
+}
+
+.popular-goods .popular-item {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-weight: bold;
+}
+
+.popular-goods .popular-item-title {
+	font-size: 18px;
+	line-height: 20px;
+
+	color: #000000;
+}
+
+.popular-item span {
+	font-size: 17px;
+	line-height: 18px;
+	text-decoration: line-through;
+
+	color: #A9A9A9;
+}
+
+.popular-item .red-button {
+	font-size: 17px;
+	line-height: 18px;
+
+	color: #ffffff;
+	background:  url(../img/red-button.svg) no-repeat;
+}
+
+.manufacturers-box {
+	background-color: #f8f5f0;
+}
+
+.services {
+	background-color: #f5f8f9;
+}
+
+.services h2 {
+	color: #000000;
+}
+
+.services p {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+
+	color: #000000;
+}
+
+.services h3 {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 36px;
+	line-height: 36px;
+	text-transform: uppercase;
+
+	color: #32425C;
+}
+
+.service-list a {
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: 700;
+
+	color: #ffffff;
+	background-color: #32425C;
+}
+
+.info h2 {
+	color: #000000;
+}
+
+.info p, .location p {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+
+	color: #000000;
+}
+
+.info .info-delivery {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 19px;
+	list-style-type: none;
+
+	color: #000000;
+}
+
+.location h2 {
+	color: #000000;
+}
+
+/*.location p {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+
+	color: #000000;
+}*/
+
+.location-img {
+	background-color: #ebe7e4;
+}
+
+/*стили для основного контента на странице каталога*/
+
+.breadcrumbs a {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+
+	color: #000000;	
+}
+
+.catalog-menu h1 {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+
+	color: #32425C;		
+	background-color: #F2F6F8;
+}
+
+.catalog-filter h2 {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+
+	color: #000000;		
+	background-color: #F7F3EC;
+}
+
+.catalog-filter legend {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	color: #000000;	
+}
+
+.filter-range label {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+
+	color: #000000;
+	background-color: #F7F3EC;		
+}
+
+.filter-checkbox label {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 15px;
+	line-height: 19px;
+	text-transform: uppercase;
+
+	color: #000000;
+}
+
+.filter-radio label {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 15px;
+	line-height: 19px;
+	text-transform: uppercase;
+
+	color: #000000;	
+}
+
+.catalog-filter .btn {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+
+	color: #000000;
+	background: #FFFFFF;
+	border: 1px solid #E5E5E5;
+}
+
+.filter-sorting {
+	background-color: #F7F3EC;		
+}
+
+.filter-sorting h2 {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+
+	color: #000000;		
+}
+
+.filter-sorting-list a {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-decoration: underline;
+
+	color: rgba(0, 0, 0, 0.3);		
+}
+
+.filter-sorting-list .active {
+	color: #EE3643;
+	text-decoration: none;
+}
+
+.icon svg {
+	fill: #C5C5C5;
+}
+
+.icon .active {
+	fill: #EE3643;
+}
+
+.catalog-item {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-weight: 700;
+}
+
+.catalog-item .catalog-item-title {
+	font-size: 18px;
+	line-height: 20px;
+
+	color: #000000;		
+}
+
+.catalog-item span {
+	font-size: 17px;
+	line-height: 18px;
+	text-decoration: line-through;
+
+	color: #A9A9A9;
+}
+
+.catalog-item .red-button {
+	font-size: 17px;
+	line-height: 18px;
+
+	color: #ffffff;
+	background:  url(../img/red-button.svg) no-repeat;
+}
+
+.paginator a {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid #E5E5E5;
+}
+
+.paginator .active {
+	color: #ffffff;
+	background-color: #EE3643;
+	border: 1px solid #EE3643;
+}
+
+.info-text {
+	background-color: #f2f6f8;
+}
+
+.info-text h2 {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.info-text p {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+/*стили для футера*/
+
+.footer {
+	background-color: #32425C;
+}
+
+.footer-logo {
+	background-color: #EE3643;
+}
+
+.footer p {
+	font-size: 18px;
+	line-height: 24px;
+
+	color: #ffffff;
+}
+
+.footer-nav a {
+	font-size: 18px;
+	line-height: 24px;
+
+	color: #ffffff;
+}
+
+.footer-menu a {
+	font-size: 18px;
+	line-height: 24px;
+
+	color: #FFDA96;
+}
+
+.footer-social {
+	background-color: #293449;
+}
+
+.social-btn img {
+	background-color: #212A3A;
+}
+
+.footer-social p {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+
+	color: #ffffff;	
+}
+
+.footer-social a {
+	color: #FFDA96;	
+}
+
+
+
+
+
+
+
+
+
+
