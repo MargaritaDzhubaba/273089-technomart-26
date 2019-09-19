@@ -93,7 +93,7 @@ input[type="radio"].visually-hidden {
 	border: none;
 }
 
-.top-menu .chechout{
+.cart-list .chechout{
 	background-color: #63A63E;
 }
 
@@ -216,6 +216,10 @@ input[type="radio"].visually-hidden {
 	background-color: #f8f5f0;
 }
 
+.popular-goods-box img {
+	background-color: #ffffff;
+}
+
 .popular-goods .popular-item {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: bold;
@@ -246,6 +250,10 @@ input[type="radio"].visually-hidden {
 
 .manufacturers-box {
 	background-color: #f8f5f0;
+}
+
+.manufacturers-box img {
+	background-color: #ffffff;
 }
 
 .services {
@@ -280,6 +288,11 @@ input[type="radio"].visually-hidden {
 
 	color: #ffffff;
 	background-color: #32425C;
+}
+
+.service-list .active {
+	color: #32425C;
+	background-color: #ffffff;	
 }
 
 .info h2 {
@@ -320,6 +333,10 @@ input[type="radio"].visually-hidden {
 }
 
 /*стили для основного контента на странице каталога*/
+
+.cart-list .active{
+	background-color: #EE3643;
+}
 
 .breadcrumbs a {
 	font-family: "PT Sans", "Arial", sans-serif;
