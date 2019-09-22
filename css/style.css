@@ -11,12 +11,15 @@ html {
 body {
 	min-width: 1920px;
 
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 
-	font-family: "Cuprum","PT Sans", "Arial", sans-serif;
+	font-family: "PT Sans", "Cuprum", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
 	font-weight: 400;
 
+	color: #000000;
 	background-color: #ffffff;
 }
 
@@ -31,14 +34,25 @@ img {
 	height: auto;
 }
 
-.btn {
+.button {
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
 	text-transform: uppercase;
 
 	color: #ffffff;
-	background-color: #FF5357;
+	background-color: #ee3643;
+
+	border-radius: 2px;
+}
+
+.button:hover {
+	background-color: #ae2f39;
+}
+
+.button:active {
+	background-color: #a02c35;	
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -61,70 +75,165 @@ input[type="radio"].visually-hidden {
 
 /*стили для хедера*/
 
-.main-header {
+.header {
 	font-family: "Cuprum", "Arial", sans-serif;
 
-	background-color: #F3F7F9;
+	background-color: #f3f6f8;
 }
 
-.top-menu, .main-nav {
+.top-line, .main-nav {
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: 400;
+}
 
+.top-line {
 	background-color: #30374a;
 }
 
-.top-menu a, .main-nav a {
+.main-nav {
+	background-color: #3a445b;
+	box-shadow: inset 0 -5px 0 0 #30374a;
+}
+
+.cart-item {
 	color: #ffffff;
 }
 
+.cart-item:hover {
+	background-color: #282e3c;
+}
+
+.cart-item:active {
+	background-color: #1f232d;
+	color: rgba(255, 255, 255, 0.6);
+}
+
 .logo-technomart {
-	background-color: #EE3643;
+	background-color: #cd3944;
+	box-shadow: inset 0 -5px 0 0 rgba(0,0,0,0.24);
 }
 
-.form-search button {
-	background-color: #30374a;
+.logo-technomart:hover {
+	background-color: #ae2f39;
+	box-shadow: inset 0 -5px 0 0 rgba(0,0,0,0.24);
+}
+
+.logo-technomart:active {
+	background-color: #a02c35;
+	box-shadow: inset 0 -5px 0 0 rgba(0,0,0,0.24);
+}
+
+.form-search .search-field {
+	font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+	line-height: 18px;
+  color: #ffffff;
+
+  background-color: #30374a;
+  border: none;
+}
+
+.form-search:hover {
+  background-color: #282e3c;
+}
+
+.form-search .search-field:focus {
+	color: #000000;
+  background-color: #ffffff;
+}
+
+.search-button {
+	background-color: transparent;
 	border: none;
 }
 
-.form-search input {
-	background-color: #30374a;
-	border: none;
+/*.search-button:hover {
+	background-color: #282e3c;
 }
 
-.cart-list .chechout{
-	background-color: #63A63E;
+.search-button:active {
+	background-color: #ffffff;
+}*/
+
+.form-search svg {
+	fill: rgba(255, 255, 255, 0.3);
+}
+
+.form-search svg:hover {
+	fill: rgba(255, 255, 255, 1);
+}
+
+.form-search svg:active {
+	fill: #d4545e;
+}
+
+.cart-list {
+list-style: none;
+}
+
+.cart-item.chechout{
+	background-color: #7aa448;
+}
+
+.cart-item.chechout:hover{
+	background-color: #81ba3f;
+}
+
+.cart-item.chechout:active{
+	background-color: #63843d;
 }
 
 .main-nav {
 	line-height: 17px;
 }
 
-.main-info h1, .main-info .slogan {
+.main-nav-list {
+	list-style: none;
+}
+
+.main-nav-item {
+	color: #ffffff;
+}
+
+.main-nav-item:hover {
+	color: #ffffff;
+	background-color: #31374a;
+}
+
+.main-nav-item:active {
+	color: rgba(255, 255, 255, 0.5);
+	background-color: #252b3b;
+}
+
+.caption {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-style: italic;
 	font-size: 16px;
 	line-height: 23px;
 
-	color: #EE3643;
+	color: #cd3944;
 }
 
-.main-info p {
+.info-text {
 	font-size: 14px;
 	line-height: 24px;
 
-	color: #32425C;
+	color: #3a445b;
 }
 
-.main-info a {
+.info-phone {
 	font-size: 21px;
 	line-height: 21px;
 
-	color: #EE3643;
+	color: #cd3944;
 }
 
-.check-in a {
+.user-menu-list {
+	list-style: none;
+}
+
+.user-menu-item {
 	font-size: 21px;
 	line-height: 21px;
 
@@ -132,17 +241,51 @@ input[type="radio"].visually-hidden {
 	background-color: #ffffff;
 }
 
-.user-nav a {
+.user-menu-item:hover {
+	color: #cd3944;
+}
+
+.user-menu-item:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.user-nav {
+	list-style: none;
+}
+
+.user-nav-item {
 	font-size: 16px;
 	line-height: 18px;
 	text-decoration: underline;
 
-	color: #32425c;
+	color: #3a445b;
+}
+
+.sing-out svg {
+	fill: #c4c4c4;
+}
+
+.sing-out svg:hover {
+	fill: #3a445b;
+}
+
+.sing-out svg:active {
+	fill: #c4c4c4;
+}
+
+.user-nav-item:hover {
+	color: #cd3944;
+}
+
+.user-nav-item:active {
+	color: #3a445b;
+	opacity: 0.3;
 }
 
 /*стили для основного контента на главной странице*/
 
 .promo {
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 700;
@@ -150,31 +293,44 @@ input[type="radio"].visually-hidden {
 	color: #ffffff;
 }
 
-.promo .btn {
+.promo-button {
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
+.promo-button:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.promo-button:active {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.promo-list {
+	list-style: none;
+}
+
 .promo .materials {
-	background-color: #FFBF47;
+	background-color: #efbe52;
 }
 
 .promo .tools {
-	background-color: #3BBCE3;
+	background-color: #73bae1;
 }
 
 .promo .technics {
-	background-color: #DC91D8;
+	background-color: #c990d5;
 }
 
 .promo .sale {
-	background-color: #8ED78F;
+	background-color: #a5d691;
 }
 
 .promo .delivery {
-	background-color: #FFC047;
+	background-color: #efbe52;
 }
 
-.slider h3 {
+.slider-title {
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: 700;
@@ -183,7 +339,8 @@ input[type="radio"].visually-hidden {
 	color: #ffffff;	
 }
 
-.slider p {
+.slider-text {
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 400;
@@ -191,61 +348,108 @@ input[type="radio"].visually-hidden {
 	color: #ffffff;		
 }
 
+.slider-controls {
+	list-style: none;
+}
+
 .hummer img{
-	background-color: #989694;
+	background-color: #99938c;
 }
 
 .drill img {
-	background-color: #635953;
+	background-color: #72706e;
 }
 
-.slider .btn {
-	background-color: #EE3643;
-}
-
-.main-content h2 {
+.popular-goods-title, .manufacturers-title {
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
 	text-transform: uppercase;
 
-	color: #32425C;
+	color: #3a445b;
 }
 
 .popular-goods-box {
 	background-color: #f8f5f0;
 }
 
-.popular-goods-box img {
+.catalog-list {
+	list-style: none;
+}
+
+.catalog-item-img {
 	background-color: #ffffff;
 }
 
-.popular-goods .popular-item {
+.catalog-item {
 	font-family: "PT Sans", "Arial", sans-serif;
-	font-weight: bold;
+	font-weight: 700;
+
+	border: 1px solid #eaeaea;
 }
 
-.popular-goods .popular-item-title {
+.catalog-item:hover {
+	box-shadow: 0 10px 25px 0 rgba(41,52,73,0.50);
+}
+
+.catalog-item .catalog-item-title {
 	font-size: 18px;
 	line-height: 20px;
 
-	color: #000000;
+	color: #000000;		
 }
 
-.popular-item span {
+.old-price {
 	font-size: 17px;
 	line-height: 18px;
 	text-decoration: line-through;
 
-	color: #A9A9A9;
+	color: #a8a8a8;
 }
 
-.popular-item .red-button {
+.catalog-item-btn {
 	font-size: 17px;
 	line-height: 18px;
 
 	color: #ffffff;
 	background:  url(../img/red-button.svg) no-repeat;
+}
+
+.button-container {
+	background-color: #ffffff;
+}
+
+.cart-button {
+	color: #ffffff;
+	background-color: #7aa448;
+	background: #63A63E;
+	box-shadow: inset 0 -3px 0 0 #4f7225;
+}
+
+.cart-button:hover {
+	background-color: #81ba3f;
+	box-shadow: inset 0 -3px 0 0 #4f7225;
+}
+
+.cart-button:active {
+	background-color: #63843d;
+}
+
+.bookmate-button {
+	color: #3a445b;
+	background-color: #ffffff;
+	border: 3px solid #63843d;
+}
+
+.bookmate-button:hover {
+	background-color: #ffffff;
+	border: 3px solid #3a445b;
+}
+
+.bookmate-button:active {
+	background-color: #ffffff;
+	opacity: 0.3;
 }
 
 .manufacturers-box {
@@ -256,58 +460,76 @@ input[type="radio"].visually-hidden {
 	background-color: #ffffff;
 }
 
+.manufacturers-list {
+	list-style: none;
+}
+
+.manufacturers-item {
+	border: 1px solid #eaeaea;
+}
+
+.manufacturers-item:hover {
+	box-shadow: 0 10px 25px 0 rgba(41,52,73,0.50);
+}
+
+.manufacturers-item:active {
+	opacity: 0.3;
+	box-shadow: 0 4px 10px 0 rgba(41,52,73,0.50);
+}
+
 .services {
 	background-color: #f5f8f9;
 }
 
-.services h2 {
-	color: #000000;
+.services-title, .location-title, .description-title {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
-.services p {
-	font-family: "PT Sans", "Arial", sans-serif;
+.services-text {
 	font-size: 13px;
 	line-height: 24px;
 
 	color: #000000;
 }
 
-.services h3 {
-	font-family: "Cuprum", "Arial", sans-serif;
-	font-size: 36px;
-	line-height: 36px;
-	text-transform: uppercase;
-
-	color: #32425C;
+.service-list {
+	list-style: none;
 }
 
-.service-list a {
+.service-item-title {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 21px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	color: #3a445b;
+}
+
+.service-item {
 	font-size: 21px;
 	line-height: 30px;
 	font-weight: 700;
 
 	color: #ffffff;
-	background-color: #32425C;
+	background-color: #3a445b;
 }
 
-.service-list .active {
-	color: #32425C;
+.service-item.active {
+	color: #3a445b;
 	background-color: #ffffff;	
 }
 
-.info h2 {
-	color: #000000;
+.service-item:hover {
+	color: #ffffff;
+	background-color: #30374a;	
 }
 
-.info p, .location p {
-	font-family: "PT Sans", "Arial", sans-serif;
-	font-size: 13px;
-	line-height: 24px;
-
-	color: #000000;
-}
-
-.info .info-delivery {
+.description-list {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 19px;
@@ -316,18 +538,6 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 }
 
-.location h2 {
-	color: #000000;
-}
-
-/*.location p {
-	font-family: "PT Sans", "Arial", sans-serif;
-	font-size: 13px;
-	line-height: 24px;
-
-	color: #000000;
-}*/
-
 .location-img {
 	background-color: #ebe7e4;
 }
@@ -335,10 +545,14 @@ input[type="radio"].visually-hidden {
 /*стили для основного контента на странице каталога*/
 
 .cart-list .active{
-	background-color: #EE3643;
+	background-color: #cd3944;
 }
 
-.breadcrumbs a {
+.breadcrumbs {
+	list-style: none;
+}
+
+.breadcrumbs-item {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
@@ -347,27 +561,31 @@ input[type="radio"].visually-hidden {
 	color: #000000;	
 }
 
-.catalog-menu h1 {
+.catalog-title {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
 
-	color: #32425C;		
-	background-color: #F2F6F8;
+	color: #3a445b;		
+	background-color: #f3f6f8;
 }
 
-.catalog-filter h2 {
+.filter-checkbox-list, .filter-radio-list, .paginator-list {
+	list-style: none;
+}
+
+.filter-title {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
 
 	color: #000000;		
-	background-color: #F7F3EC;
+	background-color: #f5f2ec;
 }
 
-.catalog-filter legend {
+.filter-legend {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 17px;
 	line-height: 30px;
@@ -377,16 +595,16 @@ input[type="radio"].visually-hidden {
 	color: #000000;	
 }
 
-.filter-range label {
+.filter-range {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 
 	color: #000000;
-	background-color: #F7F3EC;		
+	background-color: #f5f2ec;		
 }
 
-.filter-checkbox label {
+.filter-label {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 19px;
@@ -395,91 +613,81 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 }
 
-.filter-radio label {
-	font-family: "PT Sans", "Arial", sans-serif;
-	font-size: 15px;
-	line-height: 19px;
-	text-transform: uppercase;
-
-	color: #000000;	
-}
-
-.catalog-filter .btn {
+.filter-button {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
 
 	color: #000000;
-	background: #FFFFFF;
-	border: 1px solid #E5E5E5;
+	background: #ffffff;
+	border: 1px solid #e4e4e4;
+	border-radius: none;
+}
+
+.filter-button:hover {           /*это мое, временное решение, т.к. не нашла состояния этой кнопки в стайлгайде*/
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid #bec5c9;
+}
+
+.filter-button:active{
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid #cd3944;
 }
 
 .filter-sorting {
-	background-color: #F7F3EC;		
+	background-color: #f5f2ec;		
 }
 
-.filter-sorting h2 {
-	font-family: "PT Sans", "Arial", sans-serif;
-	font-size: 13px;
-	line-height: 18px;
-	text-transform: uppercase;
-
-	color: #000000;		
-}
-
-.filter-sorting-list a {
+.filter-sorting-item {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
 	text-decoration: underline;
+	text-decoration-style: dotted;
+	text-decoration-color: #cd3944;
 
 	color: rgba(0, 0, 0, 0.3);		
 }
 
-.filter-sorting-list .active {
-	color: #EE3643;
+.filter-sorting-item.active {
+	color: #cd3944;
 	text-decoration: none;
 }
 
-.icon svg {
-	fill: #C5C5C5;
+.filter-sorting-item:active {
+	text-decoration: none;
+
+	color: #cd3944;	
+}
+.filter-sorting-item:hover {
+	text-decoration: underline;
+	text-decoration-style: solid;
+  text-decoration-color: #cd3944;
+
+	color: rgba(0, 0, 0, 1);	
 }
 
-.icon .active {
+.filter-sorting-item.icon{
+	fill: #c4c4c4;
+}
+
+.filter-sorting-item.icon.active {
 	fill: #EE3643;
 }
 
-.catalog-item {
-	font-family: "PT Sans", "Arial", sans-serif;
-	font-weight: 700;
+.filter-sorting-item.icon:hover{
+	fill: rgba(0, 0, 0, 1);	
 }
 
-.catalog-item .catalog-item-title {
-	font-size: 18px;
-	line-height: 20px;
-
-	color: #000000;		
+.filter-sorting-item.icon:active {
+	fill: #EE3643;
 }
 
-.catalog-item span {
-	font-size: 17px;
-	line-height: 18px;
-	text-decoration: line-through;
-
-	color: #A9A9A9;
-}
-
-.catalog-item .red-button {
-	font-size: 17px;
-	line-height: 18px;
-
-	color: #ffffff;
-	background:  url(../img/red-button.svg) no-repeat;
-}
-
-.paginator a {
+.paginator-item {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
@@ -487,71 +695,92 @@ input[type="radio"].visually-hidden {
 	
 	color: #000000;
 	background-color: #ffffff;
-	border: 1px solid #E5E5E5;
+	border: 1px solid #e4e4e4;
 }
 
-.paginator .active {
+.paginator-item.active {
 	color: #ffffff;
-	background-color: #EE3643;
-	border: 1px solid #EE3643;
+	background-color: #cd3944;
+	border: 1px solid #cd3944;
 }
 
-.info-text {
+.paginator-item:hover {
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid #bec5c9;
+}
+
+.paginator-item:active {
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid #cd3944;
+}	
+
+.description-catalog {
 	background-color: #f2f6f8;
-}
-
-.info-text h2 {
-	font-size: 30px;
-	line-height: 30px;
-	text-transform: uppercase;
-}
-
-.info-text p {
-	font-family: "PT Sans", "Arial", sans-serif;
-	font-size: 13px;
-	line-height: 24px;
 }
 
 /*стили для футера*/
 
 .footer {
-	background-color: #32425C;
+	font-family: "Cuprum", "Arial", sans-serif;
+	background-color: #3a445b;
 }
 
-.footer-logo {
-	background-color: #EE3643;
+.footer-logo-technomart {
+	background-color: #cd3944;
 }
 
-.footer p {
+.footer-contacts {
 	font-size: 18px;
 	line-height: 24px;
 
 	color: #ffffff;
 }
 
-.footer-nav a {
+.footer-nav, .footer-menu {
+	list-style: none;
+} 
+
+.footer-nav-item {
 	font-size: 18px;
 	line-height: 24px;
 
 	color: #ffffff;
 }
 
-.footer-menu a {
+.footer-menu-item {
 	font-size: 18px;
 	line-height: 24px;
 
-	color: #FFDA96;
+	color: #f3d084;
+}
+
+.footer-menu-item:hover,
+.footer-nav-item:hover {
+	text-decoration: underline;
+}
+
+.footer-menu-item:active,
+.footer-nav-item:active {
+	text-decoration: none;
+	opacity: 0.5;
 }
 
 .footer-social {
-	background-color: #293449;
+	background-color: #30374a;
 }
 
-.social-btn img {
-	background-color: #212A3A;
+.social-button {
+	background-color: #282e3c;
 }
 
-.footer-social p {
+.social-button:hover,
+.social-button:active {
+	background-color: #cd3944;
+}
+
+.footer-feedback, .footer-developer, .footer-copyright {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 18px;
@@ -559,16 +788,16 @@ input[type="radio"].visually-hidden {
 	color: #ffffff;	
 }
 
-.footer-social a {
-	color: #FFDA96;	
+.footer-feedback-link, .footer-developer-link {
+	color: #f3d084;	
 }
 
+.footer-feedback-link:hover, 
+.footer-developer-link:hover {
+	text-decoration: underline;	
+}
 
-
-
-
-
-
-
-
-
+.footer-feedback-link:active, 
+.footer-developer-link:active {
+	color: #cd3944;
+}
