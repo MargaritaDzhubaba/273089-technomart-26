@@ -425,7 +425,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-menu-item {
-	margin-bottom: 9px;
+	margin-bottom: 5px;
 }
 
 .user-name {
@@ -519,7 +519,6 @@ input[type="radio"].visually-hidden {
 	justify-content: flex-start;
 
 	margin: 0;
-	margin-top: 5px;
 	margin-left: 17px;
 	margin-bottom: -1px;
 	padding: 0;
