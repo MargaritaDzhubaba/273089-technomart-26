@@ -19,18 +19,6 @@ try {
   isStorageSupport = false;
 }
 
-// try {
-//   storage = localStorage.getItem("email");
-// } catch (err) {
-//   isStorageSupport = false;
-// }
-
-// try {
-//   storage = localStorage.getItem("text");
-// } catch (err) {
-//   isStorageSupport = false;
-// }
-
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
