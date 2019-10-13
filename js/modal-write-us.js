@@ -28,7 +28,9 @@ link.addEventListener("click", function (evt) {
     email.focus();
   } else {
     login.focus();
-  } if (storage) {
+    }
+
+  if (storage) {
       email.value = storage;
       text.focus();
     } else {
