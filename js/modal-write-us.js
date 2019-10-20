@@ -53,10 +53,30 @@ form.addEventListener("submit", function (evt) {
   } else {
     if (isStorageSupport) {
     localStorage.setItem("login", login.value);
-    localStorage.setItem("email", email.value);
-    localStorage.setItem("text", text.value);
     }
   }
+
+   if (!login.value || !email.value || !text.value) {
+    evt.preventDefault();
+    popup.classList.add("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+    localStorage.setItem("email", email.value);
+    }
+  }
+  
+    if (!login.value || !email.value || !text.value) {
+    evt.preventDefault();
+    popup.classList.add("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+    localStorage.setItem("text", text.value);
+    }
+  } 
 });
 
 window.addEventListener("keydown", function (evt) {
