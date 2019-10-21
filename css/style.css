@@ -24,8 +24,6 @@ body {
 
 a {
 	text-decoration: none;
-
-	cursor: pointer;
 }
 
 img {
@@ -1386,6 +1384,8 @@ input[type="radio"].visually-hidden {
 	-webkit-transition: background-color 0.2s ease;
 	-o-transition: background-color 0.2s ease;
 	transition: background-color 0.2s ease;
+
+	cursor: pointer;
 }
 
 #tab-credit:checked~.service-tab-list label[for=tab-credit],
@@ -2000,6 +2000,8 @@ input[type="radio"].visually-hidden {
 	background: #ffffff;
 	border: 1px solid #e4e4e4;
 	border-radius: none;
+
+	cursor: pointer;
 }
 
 .filter-button:hover {           /*это мое, временное решение, т.к. не нашла состояния этой кнопки в стайлгайде*/
