@@ -1485,7 +1485,7 @@ input[type="radio"].visually-hidden {
 				justify-content: space-between;
 
 	padding-top: 79px;
-	padding-bottom: 85px;
+	padding-bottom: 86px;
 }
 
 .description-index {
@@ -1504,6 +1504,7 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 24px;
 
 	font-family: "PT Sans", "Arial", sans-serif;
+	letter-spacing: 0.14px;
 }
 
 .description-text.short {
@@ -1579,9 +1580,11 @@ input[type="radio"].visually-hidden {
 .location-btn {
 	display: inline-block;
 
-	padding: 11px 59px 10px 64px;
+	width: 300px;
+	padding: 11px 25px 9px 30px;
 
 	vertical-align: middle;
+	text-align: center;
 }
 
 /*стили для основного контента на странице каталога*/
@@ -2412,6 +2415,9 @@ input[type="radio"].visually-hidden {
 	-webkit-box-pack: justify;
 			-ms-flex-pack: justify;
 				justify-content: space-between;
+	-webkit-box-align: center;
+			-ms-flex-align: center;
+				align-items: center;
 
 	width: 130px;
 
