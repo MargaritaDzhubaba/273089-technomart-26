@@ -56,7 +56,7 @@ img {
 }
 
 .button:active {
-	background-color: #ba2732;	
+	background-color: #ba2732;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -103,7 +103,7 @@ input[type="radio"].visually-hidden {
 
 .header .logo-technomart {
 	position: absolute;
-	left: 0;
+	left: 10px;
 }
 
 .top-line-wrapper {
@@ -112,8 +112,9 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-	width: 940px;
+	width: 960px;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 
 .top-line-wrapper .container {
@@ -584,7 +585,7 @@ input[type="radio"].visually-hidden {
 	left: 13px;
 	top: 13px;
 
-	color: #c4c4c4
+	color: #c4c4c4;
 }
 
 .logout-btn-svg {
@@ -593,7 +594,7 @@ input[type="radio"].visually-hidden {
 	left: 12px;
 	top: 14px;
 
-	color: #c4c4c4
+	color: #c4c4c4;
 }
 
 .login-btn[href]:hover .login-btn-svg,
@@ -604,7 +605,7 @@ input[type="radio"].visually-hidden {
 
 .login-btn[href]:active .login-btn-svg,
 .logout-btn[href]:active .logout-btn-svg,
-.user-name-btn[href]:active .user-name-btn-svg  {
+.user-name-btn[href]:active .user-name-btn-svg {
 	color: #e4e4e4;
 }
 
@@ -744,7 +745,7 @@ input[type="radio"].visually-hidden {
 	background: url(../img/new-flag.svg) no-repeat 0 0;
 }
 
-.promo-item:not(:nth-child(-n+3)){
+.promo-item:not(:nth-child(-n+3)) {
 	margin-top: 20px;
 }
 
@@ -780,7 +781,7 @@ input[type="radio"].visually-hidden {
 	line-height: 30px;
 	font-weight: 700;
 
-	color: #ffffff;	
+	color: #ffffff;
 }
 
 .slider {
@@ -1425,7 +1426,7 @@ input[type="radio"].visually-hidden {
 
 .service-item {
 	display: none;
-	width: 700px;
+	width: 630px;
 	min-height: 260px;
 }
 
@@ -1449,7 +1450,7 @@ input[type="radio"].visually-hidden {
 
 .service-item-title {
 	margin: 0;
-	margin-bottom: 24px;
+	margin-bottom: 25px;
 
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 36px;
@@ -1462,17 +1463,21 @@ input[type="radio"].visually-hidden {
 
 .service-item-description {
 	margin: 0;
-	padding-right: 405px;
+	width: 299px;
 
 	font-family: "PT Sans", "Arial", sans-serif;
 }
+
+.service-item-guarantee .service-item-description {
+	width: 378px;
+} 
 
 .service-item-btn {
 	display: block;
 
 	width: 195px;
 
-	margin-top: 30px;
+	margin-top: 26px;
 	padding: 10px 20px;
 }
 
@@ -1606,7 +1611,7 @@ input[type="radio"].visually-hidden {
 	line-height: 18px;
 	text-transform: uppercase;
 
-	color: #000000;	
+	color: #000000;
 }
 
 .breadcrumbs-item:not(:first-child) {
@@ -1895,7 +1900,7 @@ input[type="radio"].visually-hidden {
 
 		-webkit-user-select: none;
 		-moz-user-select: none;
- 		-ms-user-select: none;
+		-ms-user-select: none;
 			user-select: none;
 }
 
@@ -2047,7 +2052,7 @@ input[type="radio"].visually-hidden {
 	cursor: pointer;
 }
 
-.filter-button:hover {           /*это мое, временное решение, т.к. не нашла состояния этой кнопки в стайлгайде*/
+.filter-button:hover {
 	color: #000000;
 	background-color: #ffffff;
 	border: 1px solid #bec5c9;
@@ -2445,6 +2450,10 @@ input[type="radio"].visually-hidden {
 	transition: background-color 0.3s ease;
 }
 
+.social-button-img {
+	height: 40px;
+}
+
 .social-button[href]:hover,
 .social-button[href]:active {
 	background-color: #ee3643;
@@ -2455,7 +2464,7 @@ input[type="radio"].visually-hidden {
 	font-size: 16px;
 	line-height: 18px;
 
-	color: #ffffff;	
+	color: #ffffff;
 }
 
 .footer-feedback {
@@ -2490,44 +2499,44 @@ input[type="radio"].visually-hidden {
 	0% {
 		-webkit-transform: translateY(-2000px);
 						transform: translateY(-2000px);
-  }
+	}
 
 	70% {
 		-webkit-transform: translateY(30px);
 						transform: translateY(30px);
-  }
+	}
 
 	90% {
 		-webkit-transform: translateY(-10px);
 						transform: translateY(-10px);
-  }
+	}
 
 	100% {
 		-webkit-transform: translateY(0);
 						transform: translateY(0);
-  }
+	}
 }
 
 @keyframes bounce {
 	0% {
 		-webkit-transform: translateY(-2000px);
 						transform: translateY(-2000px);
-  }
+	}
 
 	70% {
 		-webkit-transform: translateY(30px);
 						transform: translateY(30px);
-  }
+	}
 
 	90% {
 		-webkit-transform: translateY(-10px);
 						transform: translateY(-10px);
-  }
+	}
 
 	100% {
 		-webkit-transform: translateY(0);
 						transform: translateY(0);
-  }
+	}
 }
 
 @-webkit-keyframes shake {
@@ -2535,7 +2544,7 @@ input[type="radio"].visually-hidden {
 	100% {
 		-webkit-transform: translateX(0);
 						transform: translateX(0);
-  }
+	}
 
 	10%,
 	30%,
@@ -2544,7 +2553,7 @@ input[type="radio"].visually-hidden {
 	90% {
 		-webkit-transform: translateX(-10px);
 						transform: translateX(-10px);
-  }
+	}
 
 	20%,
 	40%,
@@ -2552,7 +2561,7 @@ input[type="radio"].visually-hidden {
 	80% {
 		-webkit-transform: translateX(10px);
 						transform: translateX(10px);
-  }
+	}
 }
 
 @keyframes shake {
@@ -2560,7 +2569,7 @@ input[type="radio"].visually-hidden {
 	100% {
 		-webkit-transform: translateX(0);
 						transform: translateX(0);
-  }
+	}
 
 	10%,
 	30%,
@@ -2569,7 +2578,7 @@ input[type="radio"].visually-hidden {
 	90% {
 		-webkit-transform: translateX(-10px);
 						transform: translateX(-10px);
-  }
+	}
 
 	20%,
 	40%,
@@ -2577,7 +2586,7 @@ input[type="radio"].visually-hidden {
 	80% {
 		-webkit-transform: translateX(10px);
 						transform: translateX(10px);
-  }
+	}
 }
 
 .modal {
