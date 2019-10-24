@@ -9,15 +9,15 @@ CartLink .addEventListener("click", function (evt) {
 });
 
 CartClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  CartPopup.classList.remove("modal-show");
+	evt.preventDefault();
+	CartPopup.classList.remove("modal-show");
 });
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (CartPopup.classList.contains("modal-show")) {
-      CartPopup.classList.remove("modal-show");
-    }
-  }
+	if (evt.keyCode === 27) {
+		evt.preventDefault();
+		if (CartPopup.classList.contains("modal-show")) {
+			CartPopup.classList.remove("modal-show");
+		}
+	}
 });
