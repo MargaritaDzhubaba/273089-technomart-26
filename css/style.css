@@ -4,7 +4,9 @@ html {
 					box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*, 
+*::before, 
+*::after {
 	-webkit-box-sizing: inherit;
 					box-sizing: inherit;
 }
@@ -95,7 +97,8 @@ input[type="radio"].visually-hidden {
 	background-color: #f3f6f8;
 }
 
-.top-line, .main-nav {
+.top-line, 
+.main-nav {
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: 400;
@@ -985,7 +988,8 @@ input[type="radio"].visually-hidden {
 	padding: 10px 55px;
 }
 
-.popular-goods-box, .manufacturers-box {
+.popular-goods-box, 
+.manufacturers-box {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1321,7 +1325,9 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 26px;
 }
 
-.services-title, .location-title, .description-title {
+.services-title, 
+.location-title, 
+.description-title {
 	margin: 0;
 	margin-bottom: 26px;
 
@@ -1499,7 +1505,8 @@ input[type="radio"].visually-hidden {
 	width: 550px;
 }
 
-.description-title, .location-title {
+.description-title, 
+.location-title {
 	margin: 0;
 	margin-bottom: 26px;
 }
@@ -1873,7 +1880,9 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 78px;
 }
 
-.filter-checkbox-list, .filter-radio-list, .paginator-list {
+.filter-checkbox-list, 
+.filter-radio-list, 
+.paginator-list {
 	margin: 0;
 	padding: 0;
 
@@ -2024,6 +2033,12 @@ input[type="radio"].visually-hidden {
 	background: url(../img/radio-on-hover.svg) no-repeat 0 0;
 }
 
+.filter-input-checkbox:focus + .filter-label::before,
+.filter-input-radio:focus + .filter-label::before {
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
 .filter-input-checkbox:disabled + .filter-label::before,
 .filter-input-checkbox:checked:disabled + .filter-label::after,
 .filter-input-radio:disabled + .filter-label::before,
@@ -2134,7 +2149,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-sorting-link.active {
-	color: #cd3944;
+	color: #ee3643;
 	text-decoration: none;
 
 	-webkit-transition: all 0.3s ease;
@@ -2329,7 +2344,8 @@ input[type="radio"].visually-hidden {
 	color: #f1f5f7;
 }
 
-.footer-nav, .footer-menu {
+.footer-nav, 
+.footer-menu {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -2459,7 +2475,9 @@ input[type="radio"].visually-hidden {
 	background-color: #ee3643;
 }
 
-.footer-feedback, .footer-developer, .footer-copyright {
+.footer-feedback, 
+.footer-developer, 
+.footer-copyright {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 18px;
@@ -2480,7 +2498,8 @@ input[type="radio"].visually-hidden {
 	width: 112px;
 }
 
-.footer-feedback-link, .footer-developer-link {
+.footer-feedback-link, 
+.footer-developer-link {
 	color: #ffd180;	
 }
 
