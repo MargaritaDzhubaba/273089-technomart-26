@@ -1432,7 +1432,7 @@ input[type="radio"].visually-hidden {
 
 .service-item {
 	display: none;
-	width: 630px;
+	max-width: 630px;
 	min-height: 260px;
 }
 
