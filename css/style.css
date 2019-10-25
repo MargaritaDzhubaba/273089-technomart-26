@@ -871,7 +871,7 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 21px;
 }
 
-#slider-prev:checked~.slide-hummer, 
+#slider-prev:checked~.slide-hummer,
 #slider-next:checked~.slide-drill {
 	z-index: 2;
 }
@@ -969,7 +969,7 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 21px;
 }
 
-.popular-goods-title, 
+.popular-goods-title,
 .manufacturers-title {
 	margin: 0;
 	margin-top: 5px;
@@ -988,7 +988,7 @@ input[type="radio"].visually-hidden {
 	padding: 10px 55px;
 }
 
-.popular-goods-box, 
+.popular-goods-box,
 .manufacturers-box {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1158,7 +1158,7 @@ input[type="radio"].visually-hidden {
 .cart-btn:active {
 	background-color: #518534;
 	-webkit-box-shadow: inset 0 -3px 0 0 #518534;
-					box-shadow: inset 0 -3px 0 0 #518534;	
+					box-shadow: inset 0 -3px 0 0 #518534;
 }
 
 .bookmate-btn {
@@ -1325,8 +1325,8 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 26px;
 }
 
-.services-title, 
-.location-title, 
+.services-title,
+.location-title,
 .description-title {
 	margin: 0;
 	margin-bottom: 26px;
@@ -1352,9 +1352,6 @@ input[type="radio"].visually-hidden {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-			-ms-flex-pack: justify;
-				justify-content: space-between;
 
 	padding-top: 67px;
 }
@@ -1363,6 +1360,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 
 	width: 240px;
+	margin-right: 80px;
 }
 
 .service-tab-list::after {
@@ -1425,19 +1423,17 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 
-	width: 620px;
-
 	list-style: none;
 }
 
 .service-item {
 	display: none;
-	max-width: 630px;
+	width: 630px;
 	min-height: 260px;
 }
 
-#tab-credit:checked~.services-list .service-item-credit, 
-#tab-delivery:checked~.services-list .service-item-delivery, 
+#tab-credit:checked~.services-list .service-item-credit,
+#tab-delivery:checked~.services-list .service-item-delivery,
 #tab-guarantee:checked~.services-list .service-item-guarantee {
 	display: block;
 }
@@ -1476,7 +1472,7 @@ input[type="radio"].visually-hidden {
 
 .service-item-guarantee .service-item-description {
 	width: 378px;
-} 
+}
 
 .service-item-btn {
 	display: block;
@@ -1505,7 +1501,7 @@ input[type="radio"].visually-hidden {
 	width: 550px;
 }
 
-.description-title, 
+.description-title,
 .location-title {
 	margin: 0;
 	margin-bottom: 26px;
@@ -1666,7 +1662,7 @@ input[type="radio"].visually-hidden {
 	font-weight: 400;
 	text-transform: uppercase;
 
-	color: #32425c;		
+	color: #32425c;
 	background-color: #f3f6f8;
 }
 
@@ -1822,7 +1818,7 @@ input[type="radio"].visually-hidden {
 	box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 	border-radius: 50%;
 
-	cursor: pointer;  
+	cursor: pointer;
 }
 
 .range-controls .toggle-min {
@@ -1880,8 +1876,8 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 78px;
 }
 
-.filter-checkbox-list, 
-.filter-radio-list, 
+.filter-checkbox-list,
+.filter-radio-list,
 .paginator-list {
 	margin: 0;
 	padding: 0;
@@ -2170,7 +2166,7 @@ input[type="radio"].visually-hidden {
 	-webkit-text-decoration-color: #ee3643;
 					text-decoration-color: #ee3643;
 
-	color: rgba(0, 0, 0, 1);	
+	color: rgba(0, 0, 0, 1);
 }
 
 .filter-sorting-link.icon {
@@ -2227,7 +2223,7 @@ input[type="radio"].visually-hidden {
 	transition: border 0.3s ease;
 }
 
-.paginator-link-next {	
+.paginator-link-next {
 	width: 140px;
 	padding: 9px 31px;
 }
@@ -2497,17 +2493,17 @@ input[type="radio"].visually-hidden {
 	width: 112px;
 }
 
-.footer-feedback-link, 
+.footer-feedback-link,
 .footer-developer-link {
-	color: #ffd180;	
+	color: #ffd180;
 }
 
-.footer-feedback-link[href]:hover, 
+.footer-feedback-link[href]:hover,
 .footer-developer-link[href]:hover {
-	text-decoration: underline;	
+	text-decoration: underline;
 }
 
-.footer-feedback-link[href]:active, 
+.footer-feedback-link[href]:active,
 .footer-developer-link[href]:active {
 	color: #ee3643;
 }
@@ -2683,7 +2679,7 @@ input[type="radio"].visually-hidden {
 	line-height: 18px;
 	font-weight: 400;
 
-	color: #000000;	
+	color: #000000;
 }
 
 .write-us-input {
